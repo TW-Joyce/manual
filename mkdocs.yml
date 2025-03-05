@@ -1,5 +1,6 @@
  site_name: my-manual
  
  
- theme:
-   name: material
+ theme: readthedocs
+ pages: 
+   - Home: 20.pdb-cloud-native-platform-overview.md
