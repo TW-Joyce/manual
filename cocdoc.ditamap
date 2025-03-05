@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="zh-CN">    
+  <booktitle><mainbooktitle>PieDataCS 云原生平台用户手册（draft）</mainbooktitle>
+    <booktitlealt><keyword>V2.21.0 EE </keyword></booktitlealt>
+    <booktitlealt><keyword>2025-03</keyword></booktitlealt></booktitle>
+  <bookmeta>
+    <shortdesc></shortdesc>
+    <prodinfo>
+      <prodname></prodname>
+      <series></series>
+    </prodinfo>
+  </bookmeta>
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+    <topicref href="./1.declaration.md"  format="markdown"/>
+    <topicref href="./2.preface.md"  format="markdown"/>
+  </frontmatter>
+
+  <!--<chapter navtitle="" href="./10.release-record.md" format="markdown"/>!-->
+
+  <chapter navtitle="" href="./20.pdb-cloud-native-platform-overview.md" format="markdown"/>
+  <chapter navtitle="" href="./30.pdb-privileges.md" format="markdown"/>
+  <chapter navtitle="快速上手">
+          <topicref navtitle=""  href="./30.getting-started-coc/10.free-trial-guidelines-coc.md" format="markdown"/> 
+          <topicref navtitle=""  href="./30.getting-started-coc/20.space-basic-operations.md" format="markdown"/>     
+  </chapter>
+
+  <chapter navtitle="控制台管理指南">
+          <topicref navtitle=""  href="./40.console-administration/10.console-overview.md" format="markdown"/> 
+          <topicref navtitle=""  href="./40.console-administration/20.manage-organization.md" format="markdown"/> 
+          <topicref navtitle=""  href="./40.console-administration/30.manage-computational-spaces.md" format="markdown"/>
+          <topicref navtitle=""  href="./40.console-administration/40.view-organization-user.md" format="markdown"/>
+          <topicref navtitle=""  href="./40.console-administration/50.manage-organization-roles.md" format="markdown"/>
+          <topicref navtitle=""  href="./40.console-administration/60.manage-bill-coc.md" format="markdown"/>
+          <topicref navtitle=""  href="./40.console-administration/70.manage-expenses-coc.md" format="markdown"/>
+          <topicref navtitle=""  href="./40.console-administration/80.manage-my-ticket-coc.md" format="markdown"/>
+  </chapter>
+  
+  <chapter navtitle="计算空间使用指南">
+          <topicref navtitle=""  href="./50.computational-spaces-guide/10.computational-spaces-overview.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/15.use-user-center.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/20.use-virtual-data-warehouses.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/30.use-data-insight.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/40.use-database-list.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/50.use-import-data.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/60.use-query-history.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/70.use-usage-statistics-coc.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/80.manage-space-user.md" format="markdown"/>
+          <topicref navtitle=""  href="./50.computational-spaces-guide/90.manage-space-role.md" format="markdown"/>
+  </chapter>
+
+  <chapter navtitle="计算空间高级功能">
+          <topicref navtitle=""  href="./60.advanced-features-ee-only/10.timing-job.md" format="markdown"/>
+          <topicref navtitle=""  href="./60.advanced-features-ee-only/20.audit-log.md" format="markdown"/> 
+          <topicref navtitle=""  href="./60.advanced-features-ee-only/30.data-masking.md" format="markdown"/>
+          <topicref navtitle="外部数据包装器（FDW）扩展">
+             <topicref navtitle=""  href="./60.advanced-features-ee-only/40.fdw/10.fdw_overview.md" format="markdown"/>
+             <topicref navtitle=""  href="./60.advanced-features-ee-only/40.fdw/20.postgres_fdw.md" format="markdown"/>
+             <topicref navtitle=""  href="./60.advanced-features-ee-only/40.fdw/30.mysql_fdw.md" format="markdown"/>
+             <topicref navtitle=""  href="./60.advanced-features-ee-only/40.fdw/40.oracle_fdw.md" format="markdown"/>
+          </topicref>  
+
+          <topicref navtitle="数据集成">
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/10.dataflow-overview.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/20.dataflow-privilege.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/30.dataflow-dashboard.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/40.system-configuration.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/50.create-data-source.md" format="markdown"/>  
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/60.config-associated-tables.md" format="markdown"/>  
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/80.create-ddl-task.md" format="markdown"/>  
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/90.create-offline-sync-task.md" format="markdown"/>  
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/110.create-realtime-sync-task.md" format="markdown"/>  
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/70.manage-data-element.md" format="markdown"/>   
+          </topicref>  
+
+          <topicref navtitle="数据共享">
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/60.datasharing/10.data-sharing-overview.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/60.datasharing/20.data-sharing-privilege.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/60.datasharing/30.create-data-sharing.md" format="markdown"/>
+              <topicref navtitle=""  href="./60.advanced-features-ee-only/60.datasharing/40.subscribe-data-sharing.md" format="markdown"/> 
+          </topicref>  
+  </chapter>
+
+  <chapter navtitle="附录">
+          <topicref navtitle=""  href="./100.appendix/10.external-access-examples.md" format="markdown"/>   
+          <topicref navtitle=""  href="./100.appendix/20.role-sys-privileges-details.md" format="markdown"/>   
+  </chapter>
+
+</bookmap>

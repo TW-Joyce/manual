@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="zh-CN">
+    <title>PieDataCS 数据集成使用文档</title>
+    
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/10.dataflow-overview.md" format="markdown"/>
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/20.dataflow-privilege.md" format="markdown"/>
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/30.dataflow-dashboard.md" format="markdown"/>
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/40.system-configuration.md" format="markdown"/>
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/50.create-data-source.md" format="markdown"/>  
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/60.config-associated-tables.md" format="markdown"/>  
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/80.create-ddl-task.md" format="markdown"/>  
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/90.create-offline-sync-task.md" format="markdown"/>  
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/110.create-realtime-sync-task.md" format="markdown"/>  
+    <topicref navtitle=""  href="./60.advanced-features-ee-only/50.dataflow/70.manage-data-element.md" format="markdown"/>  
+</map>

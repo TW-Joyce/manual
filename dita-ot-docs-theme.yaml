@@ -1,0 +1,306 @@
+# Sample PDF theme
+#
+# https://www.dita-ot.org/dev/topics/sample-pdf-theme.html
+
+# ↓ add-brand-colors ↓
+brand:
+  color:
+    primary: '#3436ff'
+    secondary: '#6c757d'
+    tertiary: '#bac8d1'
+    inverse: '#dcdcdc'
+    links: '#3563ab'
+    attention: '#EAF3FF'
+    note:
+      background:
+        attention: '#EAF3FF'
+        caution: '#f8d7da'
+        info: '#dce4f0'
+        tip: '#d1e7dd'
+    xml-domain: '#639'
+  font:
+    header: Alibaba PuHuiTi
+# ↑ end-brand-colors ↑
+
+
+# ↓ end-brand-font ↓
+
+# ↓ add-brand-font ↓
+
+# ↓ add-font-stacks ↓
+pdf2:
+  font:
+    sans: 'Alibaba PuHuiTi, Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
+    serif: 'Alibaba PuHuiTi, Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
+    monospaced: 'Alibaba PuHuiTi, Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
+# ↑ end-font-stacks ↑
+
+# ↓ add-page-settings ↓
+
+
+page:
+  size: PA4
+  page_mirror_margins: false
+  blank_pages: false
+  toc_maximum_level: 5
+  text-align: justify
+  # mirror-margins: true
+
+# ↑ end-page-settings ↑
+
+# ↓ add-header-setup ↓
+header:
+  color: $brand-color-primary
+  display-align: before
+  end-indent: 10mm
+  font-family: $pdf2-font-sans
+  padding-after: 6pt
+  padding-before: 12pt
+  start-indent: 10mm
+  odd:
+    content: '{chapter}'
+    border-after: solid 0.5pt $brand-color-primary
+    text-align: end
+    vertical-align: bottom
+    background-image: logo-small.png
+    background-repeat: no-repeat
+    background-position-horizontal: left
+  even:
+    content: '{chapter}'
+    border-after: solid 0.5pt $brand-color-primary
+    text-align: start
+    vertical-align: bottom
+    background-image: logo-small.png
+    background-repeat: no-repeat
+    background-position-horizontal: right
+# ↑ end-header-setup ↑
+
+# ↓ add-footer-setup ↓
+footer:
+  color: $brand-color-primary
+  end-indent: 10mm
+  font-family: $pdf2-font-sans
+  padding-after: 12pt
+  padding-before: 6pt
+  start-indent: 10mm
+  odd:
+    content: '{folio}'
+    font-weight: bold
+    text-align: end
+  even:
+    content: '{folio}'
+    font-weight: bold
+    text-align: start
+# ↑ end-footer-setup ↑
+
+style:
+  body:
+    font-family: $pdf2-font-sans
+    font-size: 12pt
+    line-height: 1.5
+    start-indent: 24pt
+
+  cmdname:
+    font-family: $brand-font-header
+    color: $brand-color-primary
+    font-weight: bold
+  codeblock:
+    background-color: $brand-color-inverse
+    border: solid 1pt $brand-color-tertiary
+    font-family: $pdf2-font-monospaced
+    font-size: 10pt
+    keep-together.within-page: always
+    space-before: 8pt
+    space-after: 8pt
+
+  codeph:
+    color: $brand-color-secondary
+    font-family: $pdf2-font-monospaced
+    font-style: italic
+
+
+  code:
+    background-color: $brand-color-secondary
+    border: solid 1pt $brand-color-secondary
+    font-family: $pdf2-font-monospaced
+    font-size: 8pt
+    keep-together.within-page: always
+    space-after: 8pt
+  # ↓ set-cover-page ↓
+  cover:
+    background-image: logo-cover.png
+    background-repeat: no-repeat
+    background-position-horizontal: center
+    height: 25.7cm
+    font-family: $pdf2-font-sans
+    space-before: 100mm
+  cover-title:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 32pt
+    font-weight: bold
+    line-height: 1.5
+    space-before: 100mm
+
+
+  # ↑ end-cover-page ↑
+  example-title:
+    color: $brand-color-secondary
+  fig:
+    caption:
+      color: $brand-color-secondary
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
+      font-family: $pdf2-font-sans
+  filepath:
+    color: $brand-color-secondary
+  h1:
+    border-after: solid 2pt $brand-color-inverse
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 18pt
+    space-before: 0pt
+    padding-top: 0pt
+    space-after: 9pt
+    font-weight: bold
+    title-numbering: true
+
+  h2:
+    border-after: solid 1pt $brand-color-inverse
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 18pt
+    # font-style: italic
+    space-before: 16pt
+    space-after: 8pt
+    title-numbering: true
+
+  h3:
+    border-after: solid 1pt $brand-color-inverse
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 14pt
+    # font-weight: bold
+    space-before: 21pt
+    space-after: 7pt
+    title-numbering: true
+
+  h4:
+    border-after: solid 1pt $brand-color-inverse
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 12pt
+    # font-style: italic
+    space-before: 12pt
+    font-family: $brand-font-header
+    title-numbering: true
+
+  
+  li:
+    label:
+      color: $brand-color-secondary
+  
+  link:
+    color: $brand-color-links
+  
+  note:
+    background-color: $brand-color-note-background-info
+    border: solid 1pt $brand-color-tertiary
+    keep-together.within-page: always
+    label:
+      font-family: $pdf2-font-sans
+      space-end: 2pt
+    padding-start: 6pt
+    start-indent: '6pt + from-parent(start-indent)'
+    padding-end: 6pt
+    end-indent: '6pt + from-parent(end-indent)'
+    space-before: 6pt
+    space-after: 12pt
+    attention:
+      background-color: $brand-color-note-background-attention #注意 浅蓝
+    caution:
+      background-color: $brand-color-note-background-caution #警告 红色
+    important:
+      background-color: $brand-color-note-background-attention
+    notice:
+      # background-color: $brand-color-note-background-attention
+      background-color: yellow
+      border: 1pt solid red
+    restriction:
+      background-color: $brand-color-note-background-attention
+    tip:
+      background-color: $brand-color-note-background-tip  #提示 绿色
+    warning:
+      background-color: $brand-color-note-background-caution
+
+    #danger 危险 灰色
+  option:
+    color: $brand-color-secondary
+    font-family: $brand-font-header
+    font-weight: bold
+  parmname:
+    color: $brand-color-primary
+    font-family: $pdf2-font-monospaced
+    font-weight: bold
+
+  # ↓ set-2h ↓  
+  section-title:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    font-size: 16pt
+    # font-style: italic
+    space-before: 16pt
+    space-after: 8pt
+    title-numbering: true
+ # ↑ end-2h↑
+
+  shortdesc:
+    color: $brand-color-secondary
+    font-family: $pdf2-font-sans
+    font-size: 12pt
+    line-height: 1.3
+
+  table:
+    caption:
+      color: $brand-color-secondary
+      font-family: $pdf2-font-sans
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
+    font-family: $pdf2-font-sans
+    font-size: 9pt
+    border: 1pt solid $brand-color-tertiary
+    header:
+      background-color: $brand-color-inverse
+ 
+  toc-1:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    start-indent: 0
+  toc-2:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    space-before: 4pt
+    start-indent: 20pt
+  toc-3:
+    color: $brand-color-primary
+    font-family: $brand-font-header
+    space-before: 2pt
+    start-indent: 42pt
+  toc-4:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    space-before: 2pt
+    start-indent: 64pt
+  varname:
+    color: $brand-color-secondary
+    font-family: $pdf2-font-sans
+    font-style: italic
+    font-weight: bold
+  xmlatt:
+    color: $brand-color-xml-domain
+  xmlelement:
+    color: $brand-color-xml-domain
+  xmlnsname:
+    color: $brand-color-xml-domain
