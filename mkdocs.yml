@@ -1,6 +1,36 @@
- site_name: my-manual
- 
- 
- theme: readthedocs
- pages: 
-   - Home: 20.pdb-cloud-native-platform-overview.md
+site_name: My Docs
+site_url: https://sitename.example
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  palette: 
+    schema: slate
+    primary: green
+
+nav:
+  - Home: index.md
+  - 快速上手: 
+    - 免费试用指南: 30.getting-started-coc/10.free-trial-guidelines-coc.md
+    - 空间基础操作: 30.getting-started-coc/20.space-basic-operations.md
+  - 控制台管理指南:
+    - 控制台概览: 40.console-administration/10.console-overview.md
+    - 管理组织: 40.console-administration/20.manage-organization.md
+    - 管理计算空间: 40.console-administration/30.manage-computational-spaces.md
+    - 查看组织用户: 40.console-administration/40.view-organization-user.md
+    - 管理组织角色: 40.console-administration/50.manage-organization-roles.md
+    - 管理账单: 40.console-administration/60.manage-bill-coc.md
+    - 管理费用: 40.console-administration/70.manage-expenses-coc.md
+    - 管理我的工单: 40.console-administration/80.manage-my-ticket-coc.md
+
+  - 计算空间使用指南:
+    - 计算空间概览: 50.computational-spaces-guide/10.computational-spaces-overview.md
+    - 使用用户中心: 50.computational-spaces-guide/15.use-user-center.md
+    - 使用虚拟数据仓库: 50.computational-spaces-guide/20.use-virtual-data-warehouses.md
+    - 使用数据洞察: 50.computational-spaces-guide/30.use-data-insight.md
+    - 使用数据库列表: 50.computational-spaces-guide/40.use-database-list.md
+    - 导入数据: 50.computational-spaces-guide/50.use-import-data.md
+    - 查询历史: 50.computational-spaces-guide/60.use-query-history.md
+    - 使用统计信息: 50.computational-spaces-guide/70.use-usage-statistics-coc.md
+    - 管理空间用户: 50.computational-spaces-guide/80.manage-space-user.md
+    - 管理空间角色: 50.computational-spaces-guide/90.manage-space-role.md

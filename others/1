@@ -1,0 +1,157 @@
+如果要使用 **MkDocs** 构建文档并将其部署到 **Read the Docs**，你需要将文档结构转换为 MkDocs 的格式，并在 `mkdocs.yml` 文件中定义导航结构。以下是基于你提供的目录结构的 MkDocs 配置和文档组织方式。
+
+---
+
+### **1. `mkdocs.yml` 配置文件**
+在 MkDocs 中，文档的导航结构通过 `mkdocs.yml` 文件定义。以下是根据你的目录结构生成的 `mkdocs.yml` 文件内容：
+
+```yaml
+site_name: My Documentation Project
+site_url: https://your-project.readthedocs.io
+repo_url: https://github.com/yourusername/yourproject
+site_description: A comprehensive guide to using our platform.
+site_author: Your Name
+
+theme: readthedocs
+
+docs_dir: docs
+site_dir: site
+
+nav:
+  - Home: index.md
+  - PDB 云原生平台概述: 20.pdb-cloud-native-platform-overview.md
+  - PDB 权限管理: 30.pdb-privileges.md
+  - 快速上手:
+    - 免费试用指南: 30.getting-started-coc/10.free-trial-guidelines-coc.md
+    - SQL 基础操作: 30.getting-started-coc/20.space-basic-operations.md
+  - 控制台管理指南:
+    - 控制台概览: 40.console-administration/10.console-overview.md
+    - 管理组织: 40.console-administration/20.manage-organization.md
+    - 管理计算空间: 40.console-administration/30.manage-computational-spaces.md
+    - 查看组织用户: 40.console-administration/40.view-organization-user.md
+    - 管理组织角色: 40.console-administration/50.manage-organization-roles.md
+    - 管理账单: 40.console-administration/60.manage-bill-coc.md
+    - 管理费用: 40.console-administration/70.manage-expenses-coc.md
+    - 管理工单: 40.console-administration/80.manage-my-ticket-coc.md
+  - 计算空间使用指南:
+    - 计算空间概览: 50.computational-spaces-guide/10.computational-spaces-overview.md
+    - 使用用户中心: 50.computational-spaces-guide/15.use-user-center.md
+    - 使用虚拟数据仓库: 50.computational-spaces-guide/20.use-virtual-data-warehouses.md
+    - 使用数据洞察: 50.computational-spaces-guide/30.use-data-insight.md
+    - 使用数据库列表: 50.computational-spaces-guide/40.use-database-list.md
+    - 导入数据: 50.computational-spaces-guide/50.use-import-data.md
+    - 查询历史: 50.computational-spaces-guide/60.use-query-history.md
+    - 使用统计信息: 50.computational-spaces-guide/70.use-usage-statistics-coc.md
+    - 管理空间用户: 50.computational-spaces-guide/80.manage-space-user.md
+    - 管理空间角色: 50.computational-spaces-guide/90.manage-space-role.md
+  - 计算空间高级功能:
+    - 定时任务: 60.advanced-features-ee-only/10.timing-job.md
+    - 审计日志: 60.advanced-features-ee-only/20.audit-log.md
+    - 数据脱敏: 60.advanced-features-ee-only/30.data-masking.md
+    - 外部数据包装器（FDW）扩展:
+      - FDW 概述: 60.advanced-features-ee-only/40.fdw/10.fdw_overview.md
+      - Postgres FDW: 60.advanced-features-ee-only/40.fdw/20.postgres_fdw.md
+      - MySQL FDW: 60.advanced-features-ee-only/40.fdw/30.mysql_fdw.md
+      - Oracle FDW: 60.advanced-features-ee-only/40.fdw/40.oracle_fdw.md
+    - 数据集成:
+      - 数据流概览: 60.advanced-features-ee-only/50.dataflow/10.dataflow-overview.md
+      - 数据流权限: 60.advanced-features-ee-only/50.dataflow/20.dataflow-privilege.md
+      - 数据流仪表盘: 60.advanced-features-ee-only/50.dataflow/30.dataflow-dashboard.md
+      - 系统配置: 60.advanced-features-ee-only/50.dataflow/40.system-configuration.md
+      - 创建数据源: 60.advanced-features-ee-only/50.dataflow/50.create-data-source.md
+      - 配置关联表: 60.advanced-features-ee-only/50.dataflow/60.config-associated-tables.md
+      - 创建 DDL 任务: 60.advanced-features-ee-only/50.dataflow/80.create-ddl-task.md
+      - 创建离线同步任务: 60.advanced-features-ee-only/50.dataflow/90.create-offline-sync-task.md
+      - 创建实时同步任务: 60.advanced-features-ee-only/50.dataflow/110.create-realtime-sync-task.md
+      - 管理数据元素: 60.advanced-features-ee-only/50.dataflow/70.manage-data-element.md
+    - 数据共享:
+      - 数据共享概览: 60.advanced-features-ee-only/60.datasharing/10.data-sharing-overview.md
+      - 数据共享权限: 60.advanced-features-ee-only/60.datasharing/20.data-sharing-privilege.md
+      - 创建数据共享: 60.advanced-features-ee-only/60.datasharing/30.create-data-sharing.md
+      - 订阅数据共享: 60.advanced-features-ee-only/60.datasharing/40.subscribe-data-sharing.md
+  - 附录:
+    - 外部访问示例: 100.appendix/10.external-access-examples.md
+    - 角色系统权限详情: 100.appendix/20.role-sys-privileges-details.md
+```
+
+---
+
+### **2. 文档文件结构**
+将你的 Markdown 文件组织到 `docs` 文件夹中，结构如下：
+
+```
+project-root/
+├── docs/
+│   ├── index.md
+│   ├── 20.pdb-cloud-native-platform-overview.md
+│   ├── 30.pdb-privileges.md
+│   ├── 30.getting-started-coc/
+│   │   ├── 10.free-trial-guidelines-coc.md
+│   │   └── 20.space-basic-operations.md
+│   ├── 40.console-administration/
+│   │   ├── 10.console-overview.md
+│   │   ├── 20.manage-organization.md
+│   │   └── ...
+│   ├── 50.computational-spaces-guide/
+│   │   ├── 10.computational-spaces-overview.md
+│   │   ├── 15.use-user-center.md
+│   │   └── ...
+│   ├── 60.advanced-features-ee-only/
+│   │   ├── 10.timing-job.md
+│   │   ├── 20.audit-log.md
+│   │   ├── 30.data-masking.md
+│   │   ├── 40.fdw/
+│   │   │   ├── 10.fdw_overview.md
+│   │   │   ├── 20.postgres_fdw.md
+│   │   │   └── ...
+│   │   ├── 50.dataflow/
+│   │   │   ├── 10.dataflow-overview.md
+│   │   │   ├── 20.dataflow-privilege.md
+│   │   │   └── ...
+│   │   ├── 60.datasharing/
+│   │   │   ├── 10.data-sharing-overview.md
+│   │   │   ├── 20.data-sharing-privilege.md
+│   │   │   └── ...
+│   │   └── ...
+│   ├── 100.appendix/
+│   │   ├── 10.external-access-examples.md
+│   │   └── 20.role-sys-privileges-details.md
+│   └── ...
+├── mkdocs.yml
+└── ...
+```
+
+---
+
+### **3. 构建和部署**
+1. **安装 MkDocs**：
+   ```bash
+   pip install mkdocs
+   ```
+
+2. **运行本地预览**：
+   ```bash
+   mkdocs serve
+   ```
+
+3. **构建文档**：
+   ```bash
+   mkdocs build
+   ```
+
+4. **部署到 Read the Docs**：
+   - 将项目代码推送到 Git 仓库（如 GitHub 或 GitLab）。
+   - 在 [Read the Docs](https://readthedocs.org/) 上创建项目，并关联你的仓库。
+   - Read the Docs 会自动读取 `mkdocs.yml` 文件并构建文档。
+
+---
+
+### **4. 注意事项**
+- **文件路径**：确保 `mkdocs.yml` 中的路径与实际文件结构一致。
+- **Markdown 文件名**：文件名应与 `mkdocs.yml` 中的路径匹配，且必须以 `.md` 结尾。
+- **主题选择**：MkDocs 默认使用 `material` 主题，但也可以通过 `theme` 配置项切换到其他主题（如 `readthedocs`）。
+- **依赖项**：如果需要额外的插件或扩展，可以在 `mkdocs.yml` 中添加 `plugins` 配置。
+
+---
+
+通过上述配置和文件结构，你可以轻松地使用 MkDocs 构建文档，并将其部署到 Read the Docs。如果你有其他问题或需要进一步调整，请随时告诉我！
