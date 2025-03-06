@@ -22,7 +22,7 @@
   <!--<chapter navtitle="" href="./10.release-record.md" format="markdown"/>!-->
 
   <chapter navtitle="" href="./20.pdb-cloud-native-platform-overview.md" format="markdown"/>
-  <chapter navtitle="" href="./30.pdb-privileges.md" format="markdown"/>
+  <chapter navtitle="" href="./25.pdb-privileges.md" format="markdown"/>
   <chapter navtitle="快速上手">
           <topicref navtitle=""  href="./30.getting-started-coc/10.free-trial-guidelines-coc.md" format="markdown"/> 
           <topicref navtitle=""  href="./30.getting-started-coc/20.space-basic-operations.md" format="markdown"/>     

@@ -20,7 +20,7 @@ site_dir: site
 nav:
   - Home: index.md
   - PDB 云原生平台概述: 20.pdb-cloud-native-platform-overview.md
-  - PDB 权限管理: 30.pdb-privileges.md
+  - PDB 权限管理: 25.pdb-privileges.md
   - 快速上手:
     - 免费试用指南: 30.getting-started-coc/10.free-trial-guidelines-coc.md
     - SQL 基础操作: 30.getting-started-coc/20.space-basic-operations.md
@@ -84,7 +84,7 @@ project-root/
 ├── docs/
 │   ├── index.md
 │   ├── 20.pdb-cloud-native-platform-overview.md
-│   ├── 30.pdb-privileges.md
+│   ├── 25.pdb-privileges.md
 │   ├── 30.getting-started-coc/
 │   │   ├── 10.free-trial-guidelines-coc.md
 │   │   └── 20.space-basic-operations.md
