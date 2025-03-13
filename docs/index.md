@@ -6,7 +6,7 @@
 
 - [PDB 云原生平台概述](20.pdb-cloud-native-platform-overview.md)
 
-- [PDB 权限管理](25.pdb-privileges.md)
+- [权限管理体系概览](25.pdb-privileges.md)
 
 - [快速上手](30.getting-started-coc/index.md)
 
@@ -18,4 +18,7 @@
   
 - [附录](100.appendix/index.md)
 
+- [code](code-examples.md)
+
+- [tabs](content-tabs.md)
 

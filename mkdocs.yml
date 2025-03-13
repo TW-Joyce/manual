@@ -2,13 +2,37 @@ site_name: My Docs
 site_url: https://sitename.example
 docs_dir: docs
 site_dir: site
+theme:
+  name: material
+  font:
+    text: SimSun
+    code: Red Hat Mono
+  palette: 
+    schema: slate
+    primary: red
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.footer
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 
 nav:
-  - Home: index.md
+  - 主页: index.md
   - 快速上手: 
     - 免费试用指南: 30.getting-started-coc/10.free-trial-guidelines-coc.md
-    - 空间基础操作: 30.getting-started-coc/20.space-basic-operations.md
+    - SQL 查询基础操作: 30.getting-started-coc/20.space-basic-operations.md
   - 控制台管理指南:
     - 控制台概览: 40.console-administration/10.console-overview.md
     - 管理组织: 40.console-administration/20.manage-organization.md
@@ -30,3 +54,8 @@ nav:
     - 使用统计信息: 50.computational-spaces-guide/70.use-usage-statistics-coc.md
     - 管理空间用户: 50.computational-spaces-guide/80.manage-space-user.md
     - 管理空间角色: 50.computational-spaces-guide/90.manage-space-role.md
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://www.openpie.com/

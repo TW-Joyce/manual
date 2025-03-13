@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档中心</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 链接到上述CSS文件 -->
+</head>
+<body>
+    <div class="container">
+        <h1>文档中心</h1>
+        <p>欢迎访问我们的文档中心，这里提供了丰富的文档资源。</p>
+
+        <h2>文档目录</h2>
+        <ul>
+            <li><a href="#section1">文档1</a></li>
+            <li><a href="#section2">文档2</a></li>
+            <li><a href="#section3">文档3</a></li>
+        </ul>
+
+        <h2 id="section1">文档1</h2>
+        <p>这是文档1的内容。文档内容可以包含文本、图片、代码块等。</p>
+        <pre><code>console.log("Hello, World!");</code></pre>
+
+        <h3>子标题</h3>
+        <p>这是文档1的子标题内容。</p>
+
+        <h2 id="section2">文档2</h2>
+        <p>这是文档2的内容。</p>
+        <blockquote>这是一个引用示例。</blockquote>
+
+        <h2 id="section3">文档3</h2>
+        <p>这是文档3的内容。</p>
+        <img src="example.jpg" alt="示例图片">
+
+        <div class="sidebar">
+            <h3>侧边栏</h3>
+            <ul>
+                <li><a href="#">链接1</a></li>
+                <li><a href="#">链接2</a></li>
+                <li><a href="#">链接3</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* 基础样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /* 清晰易读的字体 */
+    line-height: 1.7; /* 提高可读性 */
+    font-size: 16px;
+    color: #333;
+    background-color: #f2f2f2; /* 浅色背景 */
+}
+
+/* 页面容器 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* 白色背景 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    border-radius: 8px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #2f373a;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* 段落样式 */
+p {
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 链接样式 */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 列表样式 */
+ul, ol {
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* 代码块样式 */
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: #333;
+    margin: 20px 0;
+}
+
+code {
+    background-color: #f8f8f8;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: #333;
+}
+
+/* 引用样式 */
+blockquote {
+    border-left: 5px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+/* 图片样式 */
+img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* 侧边栏（可选） */
+.sidebar {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p, li {
+        font-size: 13px;
+    }
+
+    pre, code {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p, li {
+        font-size: 12px;
+    }
+
+    pre, code {
+        font-size: 10px;
+    }
+}
