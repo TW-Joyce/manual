@@ -3,7 +3,7 @@ site_url: https://sitename.example
 docs_dir: docs
 site_dir: site
 theme:
-  name: material
+  name: mkdocs
   font:
     text: SimSun
     code: Red Hat Mono
